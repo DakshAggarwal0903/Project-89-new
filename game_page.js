@@ -37,7 +37,7 @@ function check(){
             player2_score= player2_score+1;
              document.getElementById("plscore2").innerHTML=player2_score;
          }
-        
+    }
          if(Qturn=="Player 1"){
             Qturn="Player 2";
             document.getElementById("Qturn").innerHTML="Question turn: "+pl2;
@@ -48,13 +48,13 @@ function check(){
        }
        if(Aturn=="Player 1"){
         Aturn="Player 2";
-        document.getElementById("Aturn").innerHTML="Answer turn: "+pl2;
+        document.getElementById("Aturn").innerHTML="Answer turn: "+pl1;
     }
     else{
        Aturn="Player 1"
-       document.getElementById("Aturn").innerHTML="Answer turn: "+pl1;
+       document.getElementById("Aturn").innerHTML="Answer turn: "+pl2;
     }
          
-    }
+    
     document.getElementById("output").innerHTML="";   
 }
